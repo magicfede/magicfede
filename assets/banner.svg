@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="Federico Pepino — Full-Stack &amp; E-Commerce Infrastructure">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#121212"/>
+      <stop offset="0.6" stop-color="#1E1E1E"/>
+      <stop offset="1" stop-color="#121212"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.85" cy="0.5" r="0.45">
+      <stop offset="0" stop-color="#00E676" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#00E676" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#FFFFFF" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="320" fill="url(#bg)"/>
+  <rect width="1280" height="320" fill="url(#grid)"/>
+  <rect width="1280" height="320" fill="url(#glow)"/>
+  <g fill="none" stroke="#00E676" stroke-linecap="round">
+    <path d="M820 250 L960 110 L1180 110" stroke-opacity="0.55" stroke-width="2"/>
+    <path d="M860 270 L1000 130 L1240 130" stroke-opacity="0.25" stroke-width="1.5"/>
+    <circle cx="1180" cy="110" r="4" fill="#00E676" stroke="none"/>
+    <circle cx="960" cy="110" r="3" fill="#00E676" fill-opacity="0.6" stroke="none"/>
+  </g>
+  <rect x="80" y="96" width="4" height="128" fill="#00E676"/>
+  <text x="108" y="148" fill="#FFFFFF" font-family="'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="52" font-weight="600" letter-spacing="-1">Federico Pepino</text>
+  <text x="110" y="190" fill="#A9A9A9" font-family="'Segoe UI', Inter, Helvetica, Arial, sans-serif" font-size="22" letter-spacing="3">FULL-STACK · E-COMMERCE INFRASTRUCTURE</text>
+  <text x="110" y="222" fill="#00E676" font-family="'Cascadia Code', Consolas, 'Courier New', monospace" font-size="16">React · TypeScript · Supabase · Shopify · Integraciones de marketplaces</text>
+</svg>
