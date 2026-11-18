@@ -2,66 +2,75 @@
   <img src="./assets/banner.svg" alt="Federico Pepino — Full-Stack & E-Commerce Infrastructure" width="100%" />
 </p>
 
-### Full-Stack & E-Commerce Infrastructure · Córdoba, Argentina 🇦🇷
+## Federico Andrés Pepino
 
-Construyo **plataformas de e-commerce omnicanal**: vidrieras en React, temas de Shopify a medida, backends en Postgres y Edge Functions, e integraciones con marketplaces (Mercado Libre, Amazon, Mercado Pago). Me enfoco en datos consistentes entre canales, código validado y despliegues reproducibles con Git.
+**Desarrollador web full-stack y comunicador · Córdoba, Argentina 🇦🇷**
+Ingeniería en Computación y Licenciatura en Historia (UNC).
+
+Hago dos cosas que se cruzan: **medios digitales por sector** (portales de noticias, datos y contactos para el agro, la minería, la energía y la lechería) y **comercio electrónico omnicanal** (Shopify, marketplaces y backends propios). Trabajo con una regla fija: datos reales con su fuente, nada inventado, y todo el código versionado y publicado de forma reproducible.
 
 ---
 
-#### Frontend
+### 📰 Portales sectoriales: medios digitales del interior productivo
+
+Portales con noticias del sector actualizadas solas tres veces por día, cotizaciones, mapa de proyectos, foro, directorio de contactos verificados y espacio para anunciantes. Todos salen de un **motor común**: cada portal es una carpeta de configuración (nombre, fuentes, colores, contactos) sobre el mismo código.
+
+| Portal | Sector | En línea |
+|---|---|---|
+| **El Gran Ganadero** | Hacienda, remates y mercados del agro | [el-gran-ganadero.pages.dev](https://el-gran-ganadero.pages.dev) |
+| **El Gran Minero** | Minería argentina, de norte a sur | [el-gran-minero.pages.dev](https://el-gran-minero.pages.dev) |
+| **El Gran Energético** | Petróleo, gas y minería | [el-gran-energetico.pages.dev](https://el-gran-energetico.pages.dev) |
+| **La Cuenca Láctea** | Lechería (Suardi, Santa Fe) | [la-cuenca-lactea.pages.dev](https://la-cuenca-lactea.pages.dev) |
+
+**Cómo está hecho:** React + TypeScript + Vite · Cloudflare Pages + Functions + D1 (foro) · GitHub Actions para la carga automática de noticias y cotizaciones · fotos con licencia libre y crédito.
+
+**Repositorios:** `portales-sectoriales` (motor común) · `el-gran-ganadero` · `el-gran-minero` · `el-gran-energetico` · `la-cuenca-lactea`
+
+---
+
+### 🛒 Cucumber Home: e-commerce omnicanal
+
+Shopify como fuente de verdad del catálogo y el checkout. Alrededor: una vidriera en React, un tema propio y un backend que sincroniza stock y pedidos con marketplaces de Argentina, Brasil y EE. UU.
+
+| Capa | Qué resuelve | Stack |
+|---|---|---|
+| **Tema Shopify** | Tema OS 2.0 propio: 3 idiomas, filtros, carrito AJAX, requisitos legales de AR (precio sin impuestos, botón de arrepentimiento) | Liquid · CSS · JS sin dependencias |
+| **Vidriera** | Catálogo en vivo, filtros por categoría y precio, estado en la URL | React 18 · TypeScript · Vite · Tailwind · TanStack Query |
+| **Backend** | Cola de sincronización, OAuth + PKCE con Mercado Libre, webhooks verificados, tipo de cambio por hora, pedidos de Amazon | Supabase · PostgreSQL · Deno · pg_cron · Vault |
+
+**Repositorios:** `cucuhome` · `cucuhome-theme` · `portafolio` (índice, arquitectura e investigación de mercado)
+
+---
+
+### 🗂️ CRM y bases de datos
+
+| Proyecto | Qué es |
+|---|---|
+| [`ConstructoraPepino`](https://github.com/magicfede/ConstructoraPepino) | Esquema de CRM multiempresa en PostgreSQL: clientes, planes de ahorro, presupuestos y analítica mensual, con datos de ejemplo |
+
+---
+
+### 🧰 Herramientas
+
 ![React](https://img.shields.io/badge/React-00E676?style=flat-square&logo=react&logoColor=121212)
 ![TypeScript](https://img.shields.io/badge/TypeScript-00E676?style=flat-square&logo=typescript&logoColor=121212)
 ![Vite](https://img.shields.io/badge/Vite-00E676?style=flat-square&logo=vite&logoColor=121212)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-00E676?style=flat-square&logo=tailwindcss&logoColor=121212)
-![TanStack Query](https://img.shields.io/badge/TanStack_Query-00E676?style=flat-square&logo=reactquery&logoColor=121212)
-
-#### Backend
-![Deno](https://img.shields.io/badge/Deno_Edge_Functions-00E676?style=flat-square&logo=deno&logoColor=121212)
-![SQL](https://img.shields.io/badge/SQL_/_PL%2FpgSQL-00E676?style=flat-square&logo=postgresql&logoColor=121212)
-![REST](https://img.shields.io/badge/REST_%26_Webhooks-00E676?style=flat-square&logo=openapiinitiative&logoColor=121212)
-![OAuth](https://img.shields.io/badge/OAuth_2.0_%2B_PKCE-00E676?style=flat-square&logo=auth0&logoColor=121212)
-
-#### DB / Cloud
+![Cloudflare](https://img.shields.io/badge/Cloudflare_Pages_%2B_D1-00E676?style=flat-square&logo=cloudflare&logoColor=121212)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-00E676?style=flat-square&logo=githubactions&logoColor=121212)
 ![Supabase](https://img.shields.io/badge/Supabase-00E676?style=flat-square&logo=supabase&logoColor=121212)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-00E676?style=flat-square&logo=postgresql&logoColor=121212)
-![pg_cron](https://img.shields.io/badge/pg__cron_%2B_Vault-00E676?style=flat-square&logo=postgresql&logoColor=121212)
-![GitHub](https://img.shields.io/badge/GitHub-00E676?style=flat-square&logo=github&logoColor=121212)
-
-#### E-Commerce e integraciones
+![Deno](https://img.shields.io/badge/Deno_Edge_Functions-00E676?style=flat-square&logo=deno&logoColor=121212)
 ![Shopify](https://img.shields.io/badge/Shopify_Liquid_OS_2.0-00E676?style=flat-square&logo=shopify&logoColor=121212)
-![Storefront API](https://img.shields.io/badge/Storefront_API-00E676?style=flat-square&logo=shopify&logoColor=121212)
 ![Mercado Libre](https://img.shields.io/badge/Mercado_Libre_API-00E676?style=flat-square&logo=mercadopago&logoColor=121212)
 ![Amazon SP-API](https://img.shields.io/badge/Amazon_SP--API-00E676?style=flat-square&logo=amazon&logoColor=121212)
-![Mercado Pago](https://img.shields.io/badge/Mercado_Pago-00E676?style=flat-square&logo=mercadopago&logoColor=121212)
 
 ---
 
-### ◆ Proyecto principal: `cucuhome`, e-commerce omnicanal
+### 📌 Cómo trabajo
 
-> Shopify como fuente de verdad del catálogo y el checkout. Alrededor: una vidriera en React, un tema propio y un backend que sincroniza stock y pedidos con marketplaces de Argentina, Brasil y EE. UU.
+- **Datos con fuente.** Cada noticia, precio o contacto lleva de dónde salió; si no está verificado, queda en blanco.
+- **Respeto por los derechos.** Las notas enlazan al medio original y las fotos son de licencia libre, con crédito.
+- **Todo en Git.** Cada cambio queda registrado y cada sitio se publica desde su repositorio.
 
-| Capa | Qué resuelve | Stack |
-|---|---|---|
-| **Vidriera** | Catálogo en vivo, filtros por categoría y precio, paginación y estado en la URL | React 18 · TypeScript · Vite · Tailwind · TanStack Query |
-| **Tema Shopify** | Tema OS 2.0 propio: 3 idiomas, filtros, carrito AJAX, requisitos legales de AR (precio sin impuestos, Botón de arrepentimiento). 0 errores en `theme check` | Liquid · CSS · JS sin dependencias |
-| **Backend** | Cola de sincronización con `FOR UPDATE SKIP LOCKED`, OAuth + PKCE con Mercado Libre, webhooks que nunca confían en el body, tipo de cambio por hora, pedidos de Amazon con cursor incremental | Supabase · PostgreSQL · Deno · pg_cron · Vault |
-
-**Repos:** [`cucuhome`](https://github.com/magicfede/cucuhome) · [`cucuhome-theme`](https://github.com/magicfede/cucuhome-theme) · [`portafolio`](https://github.com/magicfede/portafolio)
-
----
-
-### ◆ Métricas
-
-<p>
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=magicfede&show_icons=true&hide_border=false&bg_color=121212&title_color=00E676&text_color=A9A9A9&icon_color=00E676&border_color=1E1E1E&ring_color=00E676" alt="Estadísticas de GitHub" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=magicfede&layout=compact&bg_color=121212&title_color=00E676&text_color=A9A9A9&border_color=1E1E1E" alt="Lenguajes más usados" />
-</p>
-
----
-
-### ◆ Contacto
-
-| | |
-|---|---|
-| 🌐 Portafolio | [github.com/magicfede/portafolio](https://github.com/magicfede/portafolio) |
-| 📍 Ubicación | Córdoba, Argentina · remoto |
+> La mayoría de los repositorios son privados. Si querés ver el código de alguno, escribime por GitHub.
