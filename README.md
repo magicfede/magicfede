@@ -20,7 +20,7 @@ Portales con noticias del sector actualizadas solas tres veces por día, cotizac
 | **El Gran Ganadero** | Hacienda, remates y mercados del agro | [el-gran-ganadero.pages.dev](https://el-gran-ganadero.pages.dev) |
 | **El Gran Minero** | Minería argentina, de norte a sur | [el-gran-minero.pages.dev](https://el-gran-minero.pages.dev) |
 | **El Gran Energético** | Petróleo, gas y minería | [el-gran-energetico.pages.dev](https://el-gran-energetico.pages.dev) |
-| **La Cuenca Láctea** | Lechería (Suardi, Santa Fe) | [la-cuenca-lactea.pages.dev](https://la-cuenca-lactea.pages.dev) |
+| **La Cuenca Láctea** | Lechería argentina: tambo, industria y mercado | [la-cuenca-lactea.pages.dev](https://la-cuenca-lactea.pages.dev) |
 
 **Cómo está hecho:** React + TypeScript + Vite · Cloudflare Pages + Functions + D1 (foro) · GitHub Actions para la carga automática de noticias y cotizaciones · fotos con licencia libre y crédito.
 
